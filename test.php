@@ -10,7 +10,7 @@ class QueryHelper
     /**
      * @var EntityManagerInterface
      */
-    protected $em;
+    protected $entityManager;
 
     /**
      * @var EntityManagerInterface
@@ -18,12 +18,12 @@ class QueryHelper
     protected $oldEm;
 
     /**
-     * @param   EntityManagerInterface  $em
+     * @param   EntityManagerInterface  $entityManager
      * @param   EntityManagerInterface  $oldEm
      */
-    public function __construct(EntityManagerInterface $em, EntityManagerInterface $oldEm)
+    public function __construct(EntityManagerInterface $entityManager, EntityManagerInterface $oldEm)
     {
-        $this->em = $em;
+        $this->em = $entityManager;
         $this->oldEm = $oldEm;
     }
 
