@@ -17,7 +17,7 @@ class UserDailyClockingAdapter extends Adapter implements AdapterInterface
     {
         $user = $this->getNewUserFromPontaj($object);
         $pontaj = $object->getPontajResourcePontaj();
-        $days = $this->getDayAndHoursArray(
+		        $days = $this->getDayAndHoursArray(
             $object->getPontajResourceDetails()
         );
         $pontajDay = $pontaj->getPontajDate();
